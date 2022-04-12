@@ -3,31 +3,40 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Lab 2</title>
+  <title>Creative Project 2</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
 
-  <h1>Creative Project 2</h1>
+  <h1>Creative Project 2 - Stock Data</h1>
 
   <div id="content">
     <form>
-      <label>Enter a U.S. city</label>
-      <input id="weatherInput" type="text"></input><br/>
-      <input id="weatherSubmit" type="submit" value="Submit"></input>
+      <label>Enter a stock symbol</label>
+      <input id="stockInput" type="text"></input>
+      <input id="box" type="checkbox" name="Crypto">
+      <label for="box">Crypto or ForEx</label><br/>
+
+      
+      <input id="stockSubmit" type="submit" value="Submit"></input>
     </form>
-    <div id="weatherResults">
+    <p>Multiple stock results can be fetched (up to 3) at once by seperating symbols with commas, no spaces</p>
+    <p>Example Stock Symbols: Apple = AAPL , Microsoft = MSFT, Zions Bank = ZION, Tesla = TSLA</p>
+    <p>Example Crypto/ForEx Symbols: BTCUSD, USDGBP</p>
+    <p>Look up more symbols on <a href="https://finance.yahoo.com/lookup">Yahoo finance</a></p>
+
+    <div id="stockResults">
     </div>
-  
-    <div id="forecastResults">
-    </div>
+    
   </div>
 
   
 
   <footer>
-    <p><a href="https://github.com/brendan-jensen/cs-260-creative-project-2">Github repo</a></p>
+    <p><a href="https://github.com/brendan-jensen/cs-260-creative-project-2">Github repo </a>&bull;
+      <a href="https://www.stockdata.org/documentation"> API Documentation</a></p>
+    
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>

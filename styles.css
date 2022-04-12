@@ -1,0 +1,16 @@
+a {
+    color: greenyellow;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#content {
+    min-height: 15em;
+}
+
+footer {
+    text-align: center;
+}
